@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Demo node app</title>
+    </head>
+    <body>
+        HELLO WORLD FROM
+        <pre id="json"></pre>
+
+        <script type="text/javascript">
+            var data = <%- networkJson%>;
+            document.getElementById("json").textContent = JSON.stringify(data, undefined, 2);
+        </script>
+    </body>
+</html>
